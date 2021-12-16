@@ -1,0 +1,66 @@
+{
+    "subjects": {
+        "default": {
+            "default": [
+                {
+                    "contexts": {
+                        "localip": "127.0.0.1"
+                    },
+                    "permissions-default": 1
+                }
+            ],
+            "user": [
+                {
+                    "parents": [
+                        "group:default"
+                    ]
+                }
+            ]
+        },
+        "group": {
+            "default": [
+                {
+                    "permissions-default": 1,
+                    "permissions": {
+                        "pjp.portal.interact": 1
+                    }
+                }
+            ],
+            "owner": [
+                {
+                    "permissions": {
+                        "nucleus.world.force-gamemode.override": 0,
+                        "minecraft.force-gamemode.override": 0,
+                        "*": 1
+                    },
+                    "options": {
+                        "prefix": "&l&5[&4O&ew&2n&be&1r&5]"
+                    },
+                    "parents": [
+                        "group:default"
+                    ]
+                }
+            ]
+        },
+        "user": {
+            "38625d92-0c3e-4ab0-8094-3fe4941bfe13": [
+                {
+                    "options": {
+                        "name": "Miner717"
+                    },
+                    "parents": [
+                        "group:owner"
+                    ]
+                }
+            ]
+        }
+    },
+    "schema-version": 4,
+    "rank-ladders": {
+        "default": [
+            "group:default",
+            "group:owner"
+        ]
+    },
+    "context-inheritance": {}
+}
